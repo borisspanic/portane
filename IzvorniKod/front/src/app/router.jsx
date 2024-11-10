@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./routes/app/home";
+import ItemDetails from "./routes/app/itemDetails";
 import UserProfile from "./routes/app/userProfile";
 import CreateWardrobe from "./routes/app/createWardrobe";
 import Auth from "./routes/auth/auth";
@@ -13,6 +14,7 @@ function Router() {
 				{/*path should maybe later be change to actual username*/}
 				<Route path="/create-wardrobe" element={<CreateWardrobe />} />
 				<Route path="/auth" element={<Auth />} />
+				<Route path="/item-details" element={<ItemDetails />} />
 			</Routes>
 		</BrowserRouter>
 	);
